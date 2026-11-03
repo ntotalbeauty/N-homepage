@@ -55,16 +55,6 @@ h1{
     font-size:18px;
 }
 
-.step{
-    background:white;
-    padding:20px;
-    border-radius:15px;
-}
-
-.step h3{
-    color:#7aa0c8;
-}
-
 .products{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -96,7 +86,6 @@ h1{
     border-radius:30px;
 }
 
-</style>
 .price-box{
     max-width:900px;
     margin:40px auto;
@@ -105,6 +94,50 @@ h1{
     border-radius:20px;
     box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
+
+.price-box h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.course-name{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.price-item{
+    display:flex;
+    justify-content:space-between;
+    padding:18px 0;
+    border-bottom:1px solid #ddd;
+    font-size:22px;
+}
+
+.price-item:last-child{
+    border-bottom:none;
+}
+
+.product .price{
+    font-size:30px;
+    color:#b08b64;
+    font-weight:bold;
+}
+
+.product ul{
+    text-align:left;
+    line-height:1.8;
+    padding-left:20px;
+}
+
+.product li{
+    margin-bottom:10px;
+}
+
+.product p{
+    line-height:1.8;
+}
+</style>
 
 .price-box h2{
     text-align:center;
@@ -301,24 +334,67 @@ h1{
 </div>
 
 </div>
-
 <h1>取扱商品</h1>
 
 <div class="products">
 
 <div class="product">
-<h3>ソワンクラージュ</h3>
-<p>¥19,910</p>
+
+<img src="ソワンクラージュ.jpeg">
+
+<h3>ソワンクラージュ（セット4品）</h3>
+
+<p class="price">¥19,910</p>
+
+<p>約8回分</p>
+
+<ul>
+<li>クレンジング AL　110g / 4,950円</li>
+<li>ローション AL　180ml / 5,500円</li>
+<li>マッサージクリーム AL　70g / 4,730円</li>
+<li>クリアクレイマスク AL　90g / 4,730円</li>
+</ul>
+
 </div>
 
 <div class="product">
-<h3>ソワーニュ</h3>
-<p>¥30,250</p>
+
+<img src="ソワーニュ.jpeg">
+
+<h3>ソワーニュ（セット4品）</h3>
+
+<p class="price">¥30,250</p>
+
+<p>約10回分</p>
+
+<ul>
+<li>クリアクレンジングクリーム AL　130g / 6,820円</li>
+<li>スキンローション BDまたはBC　200ml / 8,030円</li>
+<li>ソフトマッサージクリーム AL　100g / 7,700円</li>
+<li>クレイリッチマスク AL　100g / 7,700円</li>
+</ul>
+
 </div>
 
 <div class="product">
-<h3>ソワーニュ フィエルテ</h3>
-<p>¥39,050</p>
+
+<img src="ソワーニュフィエルテ.jpeg">
+
+<h3>ソワーニュ フィエルテ（セット4品）</h3>
+
+<p class="price">¥39,050</p>
+
+<p>約10回分</p>
+
+<ul>
+<li>ソフニング スキンクレンジング　130g / 10,120円</li>
+<li>モイストプログレスローション MDまたはMC　200ml / 10,230円</li>
+<li>コンセントレート フェイシャルマッサージ　100g / 9,350円</li>
+<li>コンセントレート フェイシャルマスク　100g / 9,350円</li>
+</ul>
+
+</div>
+
 </div>
 
 </div>
