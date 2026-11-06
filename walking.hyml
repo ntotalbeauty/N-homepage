@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ウォーキングレッスン | N</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap"
+      rel="stylesheet">
+
+    
+    
+<style>
+
+body{
+    margin:0;
+    background:#f5f1ee;
+    font-family:"Yu Gothic",sans-serif;
+    color:#444;
+}
+
+.hero img{
+    width:100%;
+    max-height:600px;
+    object-fit:cover;
+    display:block;
+}
+
+h1{
+    text-align:center;
+    margin:40px 0;
+}
+
+.step{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.step img{
+    width:100%;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+.step h3{
+    color:#2b83c6;
+    font-size:40px;
+}
+
+.step h4{
+    font-size:32px;
+    font-weight:normal;
+}
+
+.step p{
+    font-family:'Noto Serif JP',serif;
+    line-height:2.2;
+    font-size:20px;
+    font-weight:300;
+    letter-spacing:0.05em;
+    color:#6f6962;
+}
+
+    
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.product{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+
+    font-family:'Noto Serif JP',serif;
+    color:#6f6962;
+}
+    
+
+.product img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.product ul{
+    text-align:left;
+    line-height:1.8;
+    padding-left:20px;
+}
+
+.product li{
+    margin-bottom:10px;
+}
+
+.product p{
+    font-family:'Noto Serif JP',serif;
+    line-height:2;
+    font-size:18px;
+    font-weight:300;
+    letter-spacing:0.03em;
+    color:#6f6962;
+}
+    
+.back{
+    text-align:center;
+    margin:40px;
+}
+
+.back a{
+    text-decoration:none;
+    color:white;
+    background:#caa27b;
+    padding:15px 30px;
+    border-radius:30px;
+}
+
+.price-box{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+    font-family:'Noto Serif JP',serif;
+    color:#6f6962;
+}
+
+
+
+.product .price{
+    font-size:30px;
+    color:#b08b64;
+    font-weight:bold;
+}
+
+.product ul{
+    text-align:left;
+    line-height:1.8;
+    padding-left:20px;
+}
+
+.product li{
+    margin-bottom:10px;
+}
+
+
+h1,h2,h3,h4{
+    font-family:'Noto Serif JP',serif;
+    font-weight:300;
+    color:#3f3834;
+}
+    
+.product h3{
+    font-family:'Noto Serif JP',serif;
+    font-size:30px;
+    font-weight:300;
+    color:#3f3834;
+    line-height:1.6;
+}
+
+h1{
+    letter-spacing:0.12em;
+}
+
+h2{
+    letter-spacing:0.08em;
+}
+
+h3{
+    letter-spacing:0.05em;
+}
+
+h5{
+    font-family:'Noto Serif JP',serif;
+    font-size:24px;
+    font-weight:400;
+    color:#524b46;
+    margin-top:30px;
+}
+
+    
+@media (max-width:768px){
+
+h1{
+    font-size:32px;
+}
+
+.step h3{
+    font-size:28px;
+}
+
+.step h4{
+    font-size:24px;
+}
+
+    
+}
+
+
+@media (max-width:768px){
+
+.step p{
+    font-size:16px;
+    line-height:2;
+}
+
+.step h4{
+    font-size:24px;
+}
+
+h5{
+    font-size:18px;
+}
+
+}
+
+.step-item{
+    font-family:'Noto Serif JP',serif;
+    font-size:28px;
+    font-weight:400;
+    color:#3f3834;
+    margin-top:40px;
+    margin-bottom:10px;
+}
+
+@media (max-width:768px){
+
+.step-item{
+    font-size:22px;
+}
+
+}
+
+
+.course-name{
+    text-align:center;
+    color:#6f6962;
+    margin-bottom:30px;
+    font-family:'Noto Serif JP',serif;
+    font-size:20px;
+    line-height:2;
+    font-weight:300;
+}
+
+.price-item{
+    display:flex;
+    justify-content:space-between;
+    padding:18px 0;
+    border-bottom:1px solid #ddd;
+    font-size:22px;
+
+    font-family:'Noto Serif JP',serif;
+    font-weight:300;
+    color:#6f6962;
+}
+
+.price-item:last-child{
+    border-bottom:none;
+}
+
+.price-box h2{
+    text-align:center;
+    margin-bottom:10px;
+
+    font-family:'Noto Serif JP',serif;
+    font-size:34px;
+    font-weight:300;
+    color:#3f3834;
+    letter-spacing:0.08em;
+}
+
+
+.product h3{
+    font-family:'Noto Serif JP',serif;
+    font-size:30px;
+    font-weight:300;
+    color:#3f3834;
+    line-height:1.6;
+}
+
+
+    
+</style>
+
+</head>
+
+<body>
+    
+
+<div class="hero">
+<img src="walking-main.jpeg">
+</div>
+
+<h1>
+ウォーキング<br>
+レッスン
+</h1>
+    
+<h1>レッスン内容</h1>
+
+<div class="step">
+
+<p class="message-catch">
+～いつもの立ち姿と歩き方を、あなたの魅力に～
+</p>
+
+<p>
+姿勢や歩き方は、毎日の印象をつくるもの。
+</p>
+
+<p>
+肩の位置や体重のかけ方、目線や足の運びを見直し、
+自然にすっと伸びた立ち姿と、
+しなやかな歩き方を練習します。
+</p>
+
+<p>
+普段の歩き方をきれいに見せたい方も、
+ヒールで自信を持って歩きたい方も。
+</p>
+
+<p>
+初めての方から、
+コンテストに向けて磨きたい方まで、
+目的に合わせてお伝えします。
+</p>
+
+</div>
+
+  
+<h1>料金のご案内</h1>
+
+<div class="price-box">
+
+<div class="price-item">
+<span>美姿勢レッスン</span>
+<span>¥3,000〜</span>
+</div>
+
+<div class="price-item">
+<span>コンテストウォーキング</span>
+<span>¥4,000〜</span>
+</div>
+
+<div class="price-item">
+<span>モデルウォーキング<br>グループレッスン</span>
+<span>¥4,000〜</span>
+</div>
+
+<div class="price-item">
+<span>マンツーマンレッスン</span>
+<span>¥8,000〜</span>
+</div>
+
+</div>
+  
+
+
