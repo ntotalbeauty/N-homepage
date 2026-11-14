@@ -124,10 +124,22 @@ body{
 }
 
 .profile img{
-    width:100%;
-    max-width:500px;
-    border-radius:25px;
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+
+    padding:10px;
+    background:white;
+
+    border:3px solid #d8c4ae;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.12),
+        0 0 0 12px rgba(255,255,255,0.6);
 }
+
+    
 
 .profile-name{
     margin-top:30px;
@@ -201,6 +213,21 @@ footer{
     background:white;
 }
 
+.profile h3{
+    font-size:34px;
+    font-weight:300;
+    margin-top:30px;
+    letter-spacing:0.1em;
+}
+
+.profile-title{
+    color:#8d7b68;
+    letter-spacing:0.08em;
+    margin-bottom:30px;
+}
+
+    
+
 
 </style>
 </head>
@@ -243,10 +270,12 @@ footer{
 <img src="natsuko.JPG">
 
 <div class="profile-name">
+    
 
-<p>
-トータルビューティサロン N<br>
-代表
+<h3>河野 夏子</h3>
+
+<p class="profile-title">
+ウォーキング講師・オンラインダイエットサポート
 </p>
 
 </div>
