@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>N トータルビューティサロン</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    background:#f8f5f2;
+    font-family:'Noto Serif JP',serif;
+    color:#4d433d;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+
+.hero-logo{
+    width:180px;
+    background:white;
+    border-radius:50%;
+    padding:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.hero h1{
+    font-size:38px;
+    font-weight:300;
+    line-height:1.8;
+    letter-spacing:0.08em;
+    margin-top:40px;
+}
+
+.subtitle{
+    color:#8c837d;
+    letter-spacing:0.15em;
+}
+
+.hero-message{
+    max-width:800px;
+    margin:30px auto;
+    line-height:2.2;
+    color:#6f6962;
+}
+
+.section{
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    font-weight:300;
+    margin-bottom:50px;
+}
+
+.card{
+    max-width:1000px;
+    margin:0 auto 50px;
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}
+
+.card-content{
+    padding:30px;
+    text-align:center;
+}
+
+.card-content h2{
+    font-size:30px;
+    font-weight:300;
+}
+
+.card-content p{
+    line-height:2;
+    color:#6f6962;
+}
+
+.button{
+    display:inline-block;
+    padding:15px 40px;
+    margin-top:20px;
+    background:#8d7b68;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+.profile{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.profile img{
+    width:100%;
+    max-width:500px;
+    border-radius:25px;
+}
+
+.profile-name{
+    margin-top:30px;
+    line-height:2;
+}
+
+.profile-message{
+    margin-top:40px;
+    text-align:left;
+    line-height:2.4;
+    color:#6f6962;
+}
+
+.contact{
+    text-align:center;
+    background:white;
+    padding:80px 20px;
+}
+
+.contact-btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#8d7b68;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:white;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:28px;
+}
+
+.section-title{
+    font-size:26px;
+}
+
+.card-content h2{
+    font-size:24px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<img src="logo.JPG" class="hero-logo">
+
+<h1>
+すべての人の<br>
+キレイになりたいを叶えたい
+</h1>
+
+<p class="subtitle">
+トータルビューティサロン
+</p>
+
+<p class="hero-message">
+ウォーキング・ダイエットを通じて、
+あなたらしい美しさを引き出します。
+</p>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Walking</h2>
+
+<div class="card">
+
+<img src="walking.JPG">
+
+<div class="card-content">
+
+<h2>ウォーキングレッスン</h2>
+
+<p>
+美姿勢・美しい歩き方を身につけ、
+あなた本来の魅力を引き出します。
+</p>
+
+<a href="walking.html" class="button">
+詳細を見る
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Diet</h2>
+
+<div class="card">
+
+<img src="diet.jpg">
+
+<div class="card-content">
+
+<h2>パーソナルダイエット</h2>
+
+<p>
+理想の身体づくりをサポートし、
+健康的な美しさへ導きます。
+</p>
+
+<a href="diet.html" class="button">
+詳細を見る
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Profile</h2>
+
+<div class="profile">
+
+<img src="natsuko.JPG">
+
+<div class="profile-name">
+
+<p>
+トータルビューティサロン N<br>
+代表
+</p>
+
+</div>
+
+<div class="profile-message">
+
+<p>
+「自分が変わる喜びを、すべての方へ。」
+</p>
+
+<p>
+山口市でエステサロンを13年間経営し、
+お客様一人ひとりのお肌や美のお悩みに寄り添ってきました。
+</p>
+
+<p>
+私自身も、半年で14kgの減量を経験。
+ミセスコンテストでは準グランプリを受賞し、
+日本大会ファイナリストに選ばれました。
+</p>
+
+<p>
+その挑戦を通じて、
+肌や身体、姿勢を整えることが、
+自信や前向きな気持ちにつながると実感しています。
+</p>
+
+<p>
+年齢や性別にとらわれず、
+自分らしく輝くために。
+一人ひとりの目標やペースを大切に、
+あなたの一歩に寄り添います。
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Facial Esthetic</h2>
+
+<div class="card">
+
+<img src="make.jpeg">
+
+<div class="card-content">
+
+<h2>肌育サロン</h2>
+
+<p>
+13年間の経験を活かし、
+お一人おひとりのお肌に寄り添う
+フェイシャルトリートメントをご提供します。
+</p>
+
+<a href="make.html" class="button">
+詳細を見る
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact</h2>
+
+<p>
+ご予約・ご相談はLINEより
+お気軽にお問い合わせください。
+</p>
+
+<a href="https://line.me/R/ti/p/@386wluty"
+   class="contact-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+LINEで予約する
+</a>
+
+</section>
+
+<footer>
+© N Total Beauty Salon
+</footer>
+
+</body>
+</html>
