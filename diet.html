@@ -396,28 +396,22 @@ h1{
 
 .flow{
     display:flex;
+    justify-content:center;
     align-items:center;
-    gap:20px;
-    overflow-x:auto;
-    padding:20px 0;
-
-    -webkit-overflow-scrolling:touch;
-}
-
-.flow::-webkit-scrollbar{
-    display:none;
+    gap:10px;
+    max-width:1200px;
+    margin:50px auto;
 }
 
 .flow-item{
-    flex:0 0 180px;
+    width:22%;
     text-align:center;
 }
 
 .flow-item img{
-    width:140px;
-    height:140px;
+    width:100%;
+    max-width:180px;
     border-radius:50%;
-    object-fit:cover;
 }
 
 .flow-item p{
@@ -428,11 +422,35 @@ h1{
 }
 
 .flow-arrow{
-    flex:0 0 auto;
     font-size:40px;
     color:#8d7b68;
 }
 
+@media(max-width:768px){
+
+.flow{
+    gap:3px;
+}
+
+.flow-item{
+    width:23%;
+}
+
+.flow-item img{
+    width:100%;
+    max-width:75px;
+}
+
+.flow-item p{
+    font-size:12px;
+    line-height:1.4;
+}
+
+.flow-arrow{
+    font-size:18px;
+}
+
+}
       
 
       
