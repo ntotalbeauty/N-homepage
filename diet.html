@@ -347,7 +347,65 @@ h1{
 
 }
 
+.flow{
+    max-width:1200px;
+    margin:50px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
 
+.flow-item{
+    text-align:center;
+}
+
+.flow-item img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    background:#f7f2ee;
+}
+
+.flow-item p{
+    margin-top:15px;
+    font-family:'Noto Serif JP',serif;
+    font-size:22px;
+    color:#3f3834;
+}
+
+.flow-arrow{
+    font-size:40px;
+    color:#8d7b68;
+}
+
+@media(max-width:768px){
+
+.flow{
+    flex-direction:column;
+}
+
+.flow-arrow{
+    transform:rotate(90deg);
+    margin:10px 0;
+}
+
+.flow-item img{
+    width:140px;
+    height:140px;
+}
+
+.flow-item p{
+    font-size:18px;
+}
+
+}
+
+
+
+      
 
       
 
@@ -490,23 +548,36 @@ ZOOMを使って、
       
 <h1>サポートの流れ</h1>
 
-<div class="step">
+<div class="flow">
 
+<div class="flow-item">
+<img src="flow1.jpg">
 <p>① LINE登録</p>
+</div>
 
-<p>↓</p>
+<div class="flow-arrow">→</div>
 
+<div class="flow-item">
+<img src="flow2.jpg">
 <p>② カウンセリング</p>
+</div>
 
-<p>↓</p>
+<div class="flow-arrow">→</div>
 
+<div class="flow-item">
+<img src="flow3.jpg">
 <p>③ 目標設定</p>
+</div>
 
-<p>↓</p>
+<div class="flow-arrow">→</div>
 
+<div class="flow-item">
+<img src="flow4.jpg">
 <p>④ サポート開始</p>
+</div>
 
 </div>
+      
 
 <div class="contact">
 
