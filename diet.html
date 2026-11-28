@@ -381,16 +381,7 @@ h1{
     color:#8d7b68;
 }
 
-@media(max-width:768px){
 
-.flow{
-    flex-direction:column;
-}
-
-.flow-arrow{
-    transform:rotate(90deg);
-    margin:10px 0;
-}
 
 .flow-item img{
     width:140px;
@@ -403,7 +394,44 @@ h1{
 
 }
 
+.flow{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    overflow-x:auto;
+    padding:20px 0;
 
+    -webkit-overflow-scrolling:touch;
+}
+
+.flow::-webkit-scrollbar{
+    display:none;
+}
+
+.flow-item{
+    flex:0 0 180px;
+    text-align:center;
+}
+
+.flow-item img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.flow-item p{
+    margin-top:15px;
+    font-family:'Noto Serif JP',serif;
+    font-size:20px;
+    color:#3f3834;
+}
+
+.flow-arrow{
+    flex:0 0 auto;
+    font-size:40px;
+    color:#8d7b68;
+}
 
       
 
