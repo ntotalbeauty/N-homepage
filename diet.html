@@ -404,15 +404,17 @@ h1{
 }
 
 .flow-item{
-    width:22%;
+    width:23%;
     text-align:center;
 }
 
 .flow-item img{
     width:100%;
-    max-width:180px;
-    border-radius:50%;
+    max-width:120px;
+    aspect-ratio:1/1;
+    object-fit:contain;
 }
+      
 
 .flow-item p{
     margin-top:15px;
@@ -429,28 +431,28 @@ h1{
 @media(max-width:768px){
 
 .flow{
-    gap:3px;
+    gap:0;
 }
 
 .flow-item{
-    width:23%;
+    width:25%;
 }
 
 .flow-item img{
-    width:100%;
-    max-width:75px;
+    max-width:65px;
 }
 
 .flow-item p{
-    font-size:12px;
+    font-size:11px;
     line-height:1.4;
 }
 
 .flow-arrow{
-    font-size:18px;
+    font-size:14px;
 }
 
 }
+      
       
 
       
